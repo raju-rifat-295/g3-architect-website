@@ -1,33 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.work-sans-font{
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 /* --------------------------shared styles--------------------------*/
-.display-flex{
+.display-flex {
     display: flex;
 }
 
-.text-primary{
+.text-primary {
     color: #FF900E;
 }
+
 /* dark 02 */
-.text-gray{
-    color: #424242;         
+.text-gray {
+    color: #424242;
 }
+
 /* dark 03 */
-.text-light-gray{
+.text-light-gray {
     color: #727272;
 }
-.bg-light{
+
+.bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #FF900E;
     color: white;
     padding: 20px 25px;
@@ -37,82 +41,87 @@
     border: none;
 }
 
-main{
-    max-width: 1440px;
+main {
+    /* max-width: 1440px; */
     margin: 0 auto;
 }
 
-main > section{
+main>section {
     margin-top: 130px;
 }
 
-.section-title{
+.section-title {
     font-size: 2.8rem;
     font-weight: 700;
 }
+
 /* --------------------------header styles-------------------------- */
 
 
 /* --------------------------navbar related styles-------------------------- */
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
 }
-.brand{
+
+.brand {
     font-weight: 700;
     font-size: 2.8rem;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
     margin-right: 30px;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     font-weight: 500;
 }
 
-.navbar,.banner{
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 
 /* --------------------------banner related styles-------------------------- */
-.banner-content{
+.banner-content {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.banner-title{
+.banner-title {
     font-weight: 700;
     font-size: 4rem;
 }
 
-.banner-image{
+.banner-image {
     width: 100%;
 }
 
 
 
 /* --------------------------Team and Feature Related styles------------------------------*/
-.teams{
+.teams {
     align-items: center;
 }
 
-.team-img-container{
+.team-img-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.our-features{
+
+.our-features {
     margin-left: 73px;
     max-width: 537px;
 }
 
-#quick-list{
+#quick-list {
     font-weight: 500;
 }
 
@@ -120,46 +129,54 @@ main > section{
 
 
 /* --------------------------Feature Section Related Styles-------------------------- */
-.features{
+.features {
     gap: 140px;
 }
-#feature-section-title{
+
+#feature-section-title {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
 }
-.feature-card .feature-title{
+
+.feature-card .feature-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.feature-card{
+
+.feature-card {
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.25);
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 8px;
 }
-#experience-badge{
+
+#experience-badge {
     padding: 45px 42px;
     font-size: 1.5rem;
     font-weight: 500;
     margin-left: -100px;
     margin-top: -110px;
 }
-#experience-year{
+
+#experience-year {
     font-weight: 700;
     font-size: 4rem;
 }
-.featured-architect img{
+
+.featured-architect img {
     max-width: 100%;
 }
+
 /* --------------------------Facts Related Styles-------------------------- */
-.facts-container{
+.facts-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
 }
-.fact-card{
+
+.fact-card {
     border: 1px solid #FF900E;
     width: 240px;
     height: 240px;
@@ -168,18 +185,21 @@ main > section{
     align-items: center;
     text-align: center;
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.fact-name{
+
+.fact-name {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 10px;
 }
-.fact-description{
+
+.fact-description {
     max-width: 540px;
 }
 
@@ -187,75 +207,115 @@ main > section{
 
 
 /* --------------------------Sponsor-Related-Style-------------------------- */
-.sponsor-info{
+.sponsor-info {
     max-width: 540px;
     margin: 50px auto;
     text-align: center;
 }
-.sponsor-companies{
+
+.sponsor-companies {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
 }
-.sponsor-companies img{
+
+.sponsor-companies img {
     filter: grayscale(100%);
 }
 
 
 
+/* --------------------------Footer-Related-Style-------------------------- */
+footer {
+    justify-content: center;
+    margin: 130px auto;
+}
 
-
+footer p {
+    max-width: 1140px;
+    background-color: #FFF4E7;
+    padding: 40px 410px;
+}
 
 /* --------------------------Responsive Media Query[SMALL]-------------------------- */
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) {
+
     .navbar,
     .nav-links,
     .features,
     .teams,
-    .featured-architect{
+    .featured-architect {
         flex-direction: column;
     }
-    .nav-links{
+
+    .nav-links {
         gap: 15px;
     }
-    .team-img-container,.facts-container,.sponsor-companies{
-        grid-template-columns: repeat(1,1fr);
+
+    .team-img-container,
+    .facts-container,
+    .sponsor-companies {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .facts-container,.sponsor-companies{
+
+    .facts-container,
+    .sponsor-companies {
         justify-items: center;
         gap: 24px;
     }
-    .our-features{
+
+    .our-features {
         text-align: center;
         margin-left: 0;
     }
-    #experience-badge{
-    margin-bottom: -50px;
-    margin-left: 2px;
+
+    #experience-badge {
+        margin-bottom: -50px;
+        margin-left: 2px;
     }
-    .featured-architect{
+
+    .featured-architect {
         display: flex;
         justify-content: center;
+    }
+    footer p {
+    max-width: 1140px;
+    background-color: #FFF4E7;
+    padding: 20px 40px;
+    text-align: center;
     }
 }
 
 /* --------------------------Responsive Media Query[MEDIUM]-------------------------- */
-@media screen and (min-width:576px) and (max-width:992px){
-    .teams,.features{
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .teams,
+    .features {
         flex-direction: column;
     }
-    .our-features{
+
+    .our-features {
         margin: 50px auto;
     }
-    .facts-container,.sponsor-companies{
-        grid-template-columns: repeat(3,1fr);
+
+    .facts-container,
+    .sponsor-companies {
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         justify-content: center;
     }
-    #experience-badge{
-    margin-bottom: -50px;
-    margin-left: 2px;
+
+    #experience-badge {
+        margin-bottom: -50px;
+        margin-left: 2px;
     }
-    .featured-architect img{
+
+    .featured-architect img {
         width: 100%;
+    }
+    footer p {
+    background-color: #FFF4E7;
+    padding: 20px 40px;
+    text-align: center;
     }
 }
